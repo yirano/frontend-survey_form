@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Survey Form</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+
+    <body>
+
+        <div class="title">
+            <h1 id="title">Portrait Questionnaire</h1>
+            <p id="description">Fill this form out the best you can so that I could customize our session for you.</p>
+        </div>
+        <form id="survey-form">
+
+            <fieldset>
+                <legend>How do I contact you?</legend>
+                <label for="name">* Your Name:</label> 
+                <input type="text" name="name" id="name" placeholder="Name" required>
+                <br />
+
+                <label for="email">* Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <br />
+
+                <label for="phone">* Phone Number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Customize your session</legend>
+                <label for="services">
+                    What type of portrait are you looking to do?
+                </label>
+                    <select id="services" placeholder="Select an Option">
+                        <option value="Family">Family</option>
+                        <option value="Children">Children</option>
+                        <option value="Professional">Professional</option>
+                        <option value="Boudoir">Boudoir</option>
+                        <option value="Other">Other</option>
+                    </select>
+                <br />
+                
+                <label for="age" id="ageHide" >Age of your Child(ren)
+                <input type="number" id="age" min=0 max=18 placeholder="Age of Child(ren)" required>
+                </label>
+                <br />
+
+                <label for="professional">
+                    Have you had your photos taken by a professional before?
+                </label>
+                    <input type="radio" name="professional" id="professionalYes">
+                    <label for="professionalYes">Yes</label>
+
+                    <input type="radio" name="professional" id="professionalNo">
+                    <label for="professionalNo">No</label>
+
+                    <input type="radio" name="professional" id="professionalNoAnswer">
+                    <label for="professionalNoAnswer">Prefer not to say</label>
+                <br />
+
+                <label for="products">
+                What type of products are you most interested in?
+                </label>
+                    <input type="checkbox" name="products" id="prints" value="prints">
+                    <label for="prints">Prints</label>
+
+                    <input type="checkbox" name="products" id="wallPortraits" value="wallPortraits">
+                    <label for="wallPortraits">Wall Framed Portraits</label>
+
+                    <input type="checkbox" name="products" id="album" value="album">
+                    <label for="album">Album</label>
+
+                    <input type="checkbox" name="products" id="digital" value="digital">
+                    <label for="digital">Digital Files</label>
+
+                <br />
+                <label for="moreInfo">Anything else I should know?</label>
+                <br />
+                <textarea name="moreInfo" id="moreInfo" cols="80" rows="10"></textarea>
+            </fieldset>
+        </form>
+        
+        <footer>
+            <script src="script.js"></script>
+        </footer>
+    </body>
+</html>

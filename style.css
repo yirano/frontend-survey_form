@@ -1,0 +1,101 @@
+body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    font-family: 'Open Sans',
+    sans-serif;
+    font-size: 14px;
+}
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+form:active,
+input:focus,
+textarea:focus {
+    outline: none;
+
+}
+
+input:active {
+    color: red;
+}
+
+fieldset {
+    display: block;
+    border: 1px solid #ccc;
+    padding: 40px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    padding-bottom: 14px;
+    border-radius: 20px;
+}
+
+legend {
+    font-size: 1.351em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    padding:8px 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+label {
+    margin: 0 auto;
+    margin-right: 20px;
+
+}
+
+input, textarea, select {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: transparent;
+    margin-bottom: 20px;
+
+}
+
+input:not([type=radio]):not([type=checkbox]) {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    font-size: 1em;
+    letter-spacing: 1.1px;
+
+    line-height: 1em;
+}
+
+input {
+    height: 23px;
+    padding-left: 5px;
+    font-size: .8em;
+}
+
+
+textarea {
+    resize: none;
+}
+
+#ageHide {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
