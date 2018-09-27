@@ -15,7 +15,7 @@
             <h1 id="title">Portrait Questionnaire</h1>
             <p id="description">Fill this form out the best you can so that I could customize our session for you.</p>
         </div>
-        <form id="survey-form">
+        <form id="survey-form" action= "mailto:tiffany.arellano@outlook.com">
 
             <fieldset>
                 <legend>How do I contact you?</legend>
@@ -37,7 +37,8 @@
                 <label for="services">
                     What type of portrait are you looking to do?
                 </label>
-                    <select id="services" placeholder="Select an Option">
+                    <select id="services">
+                        <option value="" disabled selected>Select your option</option>
                         <option value="Family">Family</option>
                         <option value="Children">Children</option>
                         <option value="Professional">Professional</option>
@@ -46,8 +47,15 @@
                     </select>
                 <br />
                 
-                <label for="age" id="ageHide" >Age of your Child(ren)
-                <input type="number" id="age" min=0 max=18 placeholder="Age of Child(ren)" required>
+                <label for="childrenCount" id="childrenCountHide" >How many children will be a part of the photoshoot?
+                    <select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="Other">Other</option>
+                    </select>
                 </label>
                 <br />
 
@@ -84,6 +92,7 @@
                 <br />
                 <textarea name="moreInfo" id="moreInfo" cols="80" rows="10"></textarea>
             </fieldset>
+
         </form>
         
         <footer>

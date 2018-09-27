@@ -1,14 +1,21 @@
 var services = document.getElementById("services");
-var ageHide = document.getElementById("ageHide");
+var childrenCountHide = document.getElementById("childrenCountHide");
+var childrenCount = document.getElementById('childrenCount');
 
 
 services.addEventListener('change', function(){
+    if(services.value=='Children') {
+        childrenCountHide.style.display = "block";
+        childrenCount.addEventListener('change', childCount);
 
-if(services.value=='Children') {
-    ageHide.style.display = "block";
-} else {
-    ageHide.style.display = "none";
-}
+    } else {
+        childrenCountHide.style.display = "none";
+    }
 });
+
+
+function childCount(){
+    console.log(childrenCount.value);
+}
 
 console.log("yolo");
