@@ -9,7 +9,7 @@ Just testing out the basics.
 ### After you add your own flair to this form, list your name below and link it to your portfolio. Note what changes/improvements you've made also.
 
 
-_* Contributors: *_
+#### Contributors 
 
  * [yirano](https://github.com/yirano) - Did stuff
  
