@@ -12,4 +12,6 @@ Just testing out the basics.
 #### Contributors 
 
  * [yirano](https://github.com/yirano) - Did stuff
+ * Amy Kwok - Added extra questions.
+ * [Laura Koln](https://github.com/lkoeln) - Highlight mandatory fields with colored asterisk.
  
