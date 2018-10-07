@@ -1,18 +1,29 @@
-var services = document.getElementById("services");
-var childrenCountHide = document.getElementById("childrenCountHide");
+var familyCount = document.getElementById('familyCount');
 var childrenCount = document.getElementById('childrenCount');
 var otherProduct = document.getElementById('otherProduct');
 
 
-services.addEventListener('change', function(){
-    if(services.value=='Children') {
-        childrenCountHide.style.display = "block";
-        childrenCount.addEventListener('change', childCount);
+var sections = {
+    'Family': 'section1',
+    'Children': 'section2',
+    'Professional': 'section3',
+        'Boudoir': 'section4',
+        'Other': 'section5'
+};
 
-    } else {
-        childrenCountHide.style.display = "none";
-    }
-});
+
+services.addEventListener('change', selection);
+    
+function selection(select) {
+    
+    for(var i in sections) {
+     document.getElementById(sections[i]).style.display = "none";    
+
+    document.getElementById(sections[this.value]).style.display = "block";
+            
+     }
+}
+
 
 otherProduct.addEventListener('change', function(){
     if(otherProduct.checked) {
@@ -25,8 +36,12 @@ otherProduct.addEventListener('change', function(){
 });
 
 
-function childCount(){
+childrenCount.addEventListener('change', function(){
     console.log(childrenCount.value);
-}
+});
+
+familyCount.addEventListener('change', function(){
+    console.log(familyCount.value);
+});
 
 console.log("yolo");

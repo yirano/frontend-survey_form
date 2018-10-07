@@ -47,18 +47,57 @@
                         <option value="Other">Other</option>
                     </select>
                 <br />
+
+				<div id="section1" style="display:none;">
+					<label>How many family members will be a part of the session?
+						<select id="familyCount" placeholder="Select an Option" placeholder="0" required>
+                        	<option value="" disabled selected>0</option>
+                        	<option value="1">1</option>
+                       	 	<option value="2">2</option>
+                        	<option value="3">3</option>
+                        	<option value="4">4</option>
+                        	<option value="Other">Other</option>
+                    	</select>
+					</label> <br />
+					<label>Tell me something about them that makes them unique.</label><br /> 
+						<textarea name="familyUniqueAnswer" placeholder="Your answer" cols="80" rows="5"></textarea><br />
+					<label>Is there something I should be mindful about a particular family member?</label> <br />
+						<textarea name="familyMemberAnswer" placeholder="Your answer" cols="80" rows="5"></textarea><br />
+				</div>
+
+
                 
-                <label for="childrenCount" id="childrenCountHide" >How many children will be a part of the photoshoot?
-                    <select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
-                        <option value="" disabled selected>0</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="Other">Other</option>
-                    </select>
-                </label>
-                <br />
+                <div for="childrenCount" id="section2" style="display:none;">
+					<label>How many children will be a part of the photoshoot?
+                    	<select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
+                        	<option value="" disabled selected>0</option>
+                        	<option value="1">1</option>
+                        	<option value="2">2</option>
+                        	<option value="3">3</option>
+                        	<option value="4">4</option>
+                        	<option value="Other">Other</option>
+                    	</select>
+					</label><br />
+					<label>What are the names and ages of your children?</label><br />
+						<textarea name="childName" placeholder="Their names and ages" cols="80" rows="5"></textarea><br />
+					<label>What are the personalities of your children like?</label><br />
+						<textarea name="childPersonality" placeholder="Their personalities..." cols="80" rows="5"></textarea><br />
+					<label>Do they have allergies that I should be mindful of?</label><br />
+						<textarea name="childAllergy" placeholder="Allergies..." cols="80" rows="5"></textarea><br />
+									
+                </div>
+
+				<div id="section3" style="display:none;">
+						<!---More info for Professional-->
+				</div>
+				<div id="section4" style="display:none;">
+						<!---More info for Boudoir-->
+				</div>
+				<div id="section5" style="display:none;">
+						<!---More info for Other-->
+				</div>
+
+
 
                 <label for="professional">
                     Have you had your photos taken by a professional before?
