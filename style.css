@@ -108,6 +108,10 @@ button:focus, button:active {
     border: none;
 }
 
+span.mandatory {
+  color: #F01C30;
+}
+
 #childrenCountHide {
     display: none;
 }
@@ -119,4 +123,3 @@ button:focus, button:active {
 .display {
     display: block;
 }
-

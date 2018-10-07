@@ -3,10 +3,8 @@
 <html>
     <head>
         <title>Survey Form</title>
-
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-        
     </head>
 
     <body>
@@ -19,16 +17,16 @@
 
             <fieldset>
                 <legend>How do I contact you?</legend>
-                <label for="name">* Your Name:</label> 
-                <input type="text" name="name" id="name" placeholder="Name" required>
+                <label for="name">Your Name:<span class="mandatory">*</span></label>
+                <input type="text" name="name" id="name" placeholder="e. g. John Doe" required>
                 <br />
 
-                <label for="email">* Email:</label>
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <label for="email">Email:<span class="mandatory">*</span></label>
+                <input type="email" name="email" id="email" placeholder="e. g. john.doe@example.com" required>
                 <br />
 
-                <label for="phone">* Phone Number:</label>
-                <input type="tel" name="phone" id="phone" placeholder="Phone" required>
+                <label for="phone">Phone Number:<span class="mandatory">*</span></label>
+                <input type="tel" name="phone" id="phone" placeholder="e. g. 0172234523454" required>
                 <br />
             </fieldset>
 
@@ -48,6 +46,17 @@
                     </select>
                 <br />
 
+                <label for="childrenCount" id="childrenCountHide">How many children will be a part of the photoshoot?
+                    <select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+                <br />
 				<div id="section1" style="display:none;">
 					<label>How many family members will be a part of the session?
 						<select id="familyCount" placeholder="Select an Option" placeholder="0" required>
@@ -140,7 +149,7 @@
 
             <button type="submit" value="Submit">Submit</button>
         </form>
-        
+
         <footer>
             <script src="script.js"></script>
         </footer>
