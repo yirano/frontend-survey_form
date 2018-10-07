@@ -6,7 +6,7 @@ Just testing out the basics.
 
 - The form does not submit anywhere. I'd like for it to be kept that way while we experiment and focus on the form itself.
 
-### After you add your own flair to this form, list your name below and link it to your portfolio. Note what changes/improvements you've made also.
+### After you add your own flair to this form, list your name in the README.md and link it to your portfolio. Note what changes/improvements you've made also.
 
 
 #### Contributors 
