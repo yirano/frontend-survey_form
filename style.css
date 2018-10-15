@@ -8,26 +8,10 @@ body {
     font-size: 14px;
 }
 
-.title {
-    margin: 0 auto;
-    text-align: center;
-}
-
 form {
     width: 70%;
     margin: 0 auto;
     padding: 30px;
-}
-
-form:active,
-input:focus,
-textarea:focus {
-    outline: none;
-
-}
-
-input:active {
-    color: red;
 }
 
 fieldset {
@@ -61,17 +45,6 @@ input, textarea, select {
     -webkit-box-sizing: border-box;
     background-color: transparent;
     margin-bottom: 20px;
-
-}
-
-input:not([type=radio]):not([type=checkbox]) {
-    width: 300px;
-    height: 35px;
-    border: none;
-    border-bottom: 1px solid rgb(78, 78, 78);
-    font-size: 1em;
-    letter-spacing: 1.1px;
-
 }
 
 input {
@@ -82,11 +55,6 @@ input {
 
 textarea {
     resize: none;
-}
-
-input[name='products'], input[name='professional'] {
-    margin-left: 30px;
-    margin-top: 10px;
 }
 
 button {
@@ -101,6 +69,52 @@ button {
     margin-bottom: 100px;
 }
 
+.title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.display {
+    display: block;
+}
+
+#childrenCountHide {
+    display: none;
+}
+
+#section1, #section2, #section3, #section4, #section5 {
+    display: none;
+}
+
+form:active,
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+input:active {
+    color: red;
+}
+
+input:not([type=radio]):not([type=checkbox]) {
+    width: 300px;
+    height: 35px;
+    border: none;
+    border-bottom: 1px solid rgb(78, 78, 78);
+    font-size: 1em;
+    letter-spacing: 1.1px;
+
+}
+
+input[name='products'], input[name='professional'] {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
 button:focus, button:active {
     outline: none;
     background-color: #ccc;
@@ -110,16 +124,4 @@ button:focus, button:active {
 
 span.mandatory {
   color: #F01C30;
-}
-
-#childrenCountHide {
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
-
-.display {
-    display: block;
 }
