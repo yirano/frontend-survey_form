@@ -8,13 +8,12 @@
     </head>
 
     <body>
-
         <div class="title">
             <h1 id="title">Portrait Questionnaire</h1>
             <p id="description">Fill this form out the best you can so that I could customize our session for you.</p>
         </div>
-        <form id="survey-form" action= "mailto:tiffany.arellano@outlook.com">
 
+        <form id="survey-form" action= "mailto:tiffany.arellano@outlook.com">
             <fieldset>
                 <legend>How do I contact you?</legend>
                 <label for="name">Your Name:<span class="mandatory">*</span></label>
@@ -32,21 +31,47 @@
 
             <fieldset>
                 <legend>Let's customize your session</legend>
-
-                <label for="services">
-                    What type of portrait are you looking to do?
-                </label>
-                    <select id="services">
-                        <option value="" disabled selected>Select your option</option>
-                        <option value="Family">Family</option>
-                        <option value="Children">Children</option>
-                        <option value="Professional">Professional</option>
-                        <option value="Boudoir">Boudoir</option>
-                        <option value="Other">Other</option>
-                    </select>
+                <label for="services"> What type of portrait are you looking to do?</label>
+                <select id="services">
+                    <option value="" disabled selected>Select your option</option>
+                    <option value="Family">Family</option>
+                    <option value="Children">Children</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Boudoir">Boudoir</option>
+                    <option value="Other">Other</option>
+                </select>
                 <br />
 
-                <label for="childrenCount" id="childrenCountHide">How many children will be a part of the photoshoot?
+                <label for="childrenCount" id="childrenCountHide">How many children will be a part of the photoshoot? </label>
+                <select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
+                    <option value="" disabled selected>0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br />
+
+                <div id="section1">
+					<label>How many family members will be a part of the session? </label>
+					<select id="familyCount" placeholder="Select an Option" placeholder="0" required>
+                        <option value="" disabled selected>0</option>
+                        <option value="1">1</option>
+                       	<option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="Other">Other</option>
+                    </select>
+					<br />
+					<label>Tell me something about them that makes them unique.</label><br/> 
+					<textarea name="familyUniqueAnswer" placeholder="Your answer" cols="80" rows="5"></textarea><br />
+					<label>Is there something I should be mindful about a particular family member?</label> <br />
+					<textarea name="familyMemberAnswer" placeholder="Your answer" cols="80" rows="5"></textarea><br />
+				</div>
+
+                <div for="childrenCount" id="section2">
+					<label>How many children will be a part of the photoshoot? </label>
                     <select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
                         <option value="" disabled selected>0</option>
                         <option value="1">1</option>
@@ -55,103 +80,69 @@
                         <option value="4">4</option>
                         <option value="Other">Other</option>
                     </select>
-                </label>
-                <br />
-				<div id="section1" style="display:none;">
-					<label>How many family members will be a part of the session?
-						<select id="familyCount" placeholder="Select an Option" placeholder="0" required>
-                        	<option value="" disabled selected>0</option>
-                        	<option value="1">1</option>
-                       	 	<option value="2">2</option>
-                        	<option value="3">3</option>
-                        	<option value="4">4</option>
-                        	<option value="Other">Other</option>
-                    	</select>
-					</label> <br />
-					<label>Tell me something about them that makes them unique.</label><br /> 
-						<textarea name="familyUniqueAnswer" placeholder="Your answer" cols="80" rows="5"></textarea><br />
-					<label>Is there something I should be mindful about a particular family member?</label> <br />
-						<textarea name="familyMemberAnswer" placeholder="Your answer" cols="80" rows="5"></textarea><br />
-				</div>
-
-
-                
-                <div for="childrenCount" id="section2" style="display:none;">
-					<label>How many children will be a part of the photoshoot?
-                    	<select id="childrenCount" placeholder="Select an Option" placeholder="0" required>
-                        	<option value="" disabled selected>0</option>
-                        	<option value="1">1</option>
-                        	<option value="2">2</option>
-                        	<option value="3">3</option>
-                        	<option value="4">4</option>
-                        	<option value="Other">Other</option>
-                    	</select>
-					</label><br />
+					<br />
 					<label>What are the names and ages of your children?</label><br />
-						<textarea name="childName" placeholder="Their names and ages" cols="80" rows="5"></textarea><br />
+					<textarea name="childName" placeholder="Their names and ages" cols="80" rows="5"></textarea><br />
 					<label>What are the personalities of your children like?</label><br />
-						<textarea name="childPersonality" placeholder="Their personalities..." cols="80" rows="5"></textarea><br />
+					<textarea name="childPersonality" placeholder="Their personalities..." cols="80" rows="5"></textarea><br />
 					<label>Do they have allergies that I should be mindful of?</label><br />
-						<textarea name="childAllergy" placeholder="Allergies..." cols="80" rows="5"></textarea><br />
-									
+					<textarea name="childAllergy" placeholder="Allergies..." cols="80" rows="5"></textarea><br />				
                 </div>
 
-				<div id="section3" style="display:none;">
+                <div id="section3">
 						<!---More info for Professional-->
 				</div>
-				<div id="section4" style="display:none;">
+
+				<div id="section4">
 						<!---More info for Boudoir-->
 				</div>
-				<div id="section5" style="display:none;">
+
+				<div id="section5">
 						<!---More info for Other-->
 				</div>
 
-
-
-                <label for="professional">
-                    Have you had your photos taken by a professional before?
-                </label><br />
-                    <input type="radio" name="professional" id="professionalYes">
-                    <label for="professionalYes">Yes</label>
-
-                    <input type="radio" name="professional" id="professionalNo">
-                    <label for="professionalNo">No</label>
-
-                    <input type="radio" name="professional" id="professionalNoAnswer">
-                    <label for="professionalNoAnswer">Prefer not to say</label>
+                <label for="professional"> Have you had your photos taken by a professional before?</label>
                 <br />
 
-                <label for="products">
-                What type of products are you most interested in?
-                </label>
-                    <br />
-
-                    <input type="checkbox" name="products" id="prints" value="prints">
-                    <label for="prints">Prints</label><br />
-
-                    <input type="checkbox" name="products" id="wallPortraits" value="wallPortraits">
-                    <label for="wallPortraits">Wall Framed Portraits</label>
-                    <br />
-                    <input type="checkbox" name="products" id="album" value="album">
-                    <label for="album">Album</label>
-                    <br />
-                    <input type="checkbox" name="products" id="digital" value="digital">
-                    <label for="digital">Digital Files</label>
-                    <br />
-                    <input type="checkbox" name="products" id="otherProduct" value="otherProduct">
-                    <label for="otherProduct">Other</label><input type="text" name="products" id="otherInput" placeholder="Other Product" class="hidden">
-
+                <input type="radio" name="professional" id="professionalYes">
+                <label for="professionalYes">Yes</label>
+                <input type="radio" name="professional" id="professionalNo">
+                <label for="professionalNo">No</label>
+                <input type="radio" name="professional" id="professionalNoAnswer">
+                <label for="professionalNoAnswer">Prefer not to say</label>
                 <br />
+
+                <label for="products"> What type of products are you most interested in? </label>
+                <br />
+
+                <input type="checkbox" name="products" id="prints" value="prints">
+                <label for="prints">Prints</label><br />
+                <input type="checkbox" name="products" id="wallPortraits" value="wallPortraits">
+                <label for="wallPortraits">Wall Framed Portraits</label>
+                <br />
+
+                <input type="checkbox" name="products" id="album" value="album">
+                <label for="album">Album</label>
+                <br />
+
+                <input type="checkbox" name="products" id="digital" value="digital">
+                <label for="digital">Digital Files</label>
+                <br />
+
+                <input type="checkbox" name="products" id="otherProduct" value="otherProduct">
+                <label for="otherProduct">Other</label><input type="text" name="products" id="otherInput" placeholder="Other Product" class="hidden">
+                <br />
+
                 <label for="moreInfo">Anything else I should know?</label>
                 <br />
+                
                 <textarea name="moreInfo" id="moreInfo" cols="80" rows="10"></textarea>
             </fieldset>
-
             <button type="submit" value="Submit">Submit</button>
         </form>
-
-        <footer>
-            <script src="script.js"></script>
-        </footer>
     </body>
+
+    <footer>
+        <script src="script.js"></script>
+    </footer>
 </html>
